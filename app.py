@@ -33,23 +33,17 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 st.markdown("""
-<div class="topbar">
-  <div class="brand">plant<span>.</span>sense</div>
-  <div class="nav">ค้นพบ · เกี่ยวกับโครงการ · ทีมผู้จัดทำ</div>
-  <div class="pill">KMITL · AGTECH</div>
-</div>
-<section class="hero">
-  <div>
-    <div class="eyebrow">Agricultural plant collection</div>
-    <h1>ค้นพบความงามของ <em>พืช</em> รอบตัวเรา</h1>
-    <p>พื้นที่เล็ก ๆ สำหรับรวบรวมและนำเสนอข้อมูลพืชทางการเกษตร ให้การเรียนรู้เป็นเรื่องง่าย สงบ และเป็นระบบ</p>
-  </div>
-  <div class="visual">
-    <div class="orb"></div><div class="leaf"></div><div class="leaf two"></div>
-    <div class="visual-label">ระบบฐานข้อมูลสายพันธุ์พืชทางการเกษตร</div>
-  </div>
-</section>
+<div class="topbar"><div class="brand">plant<span>.</span>sense</div><div class="nav">ค้นพบ · เกี่ยวกับโครงการ · ทีมผู้จัดทำ</div><div class="pill">KMITL · AGTECH</div></div>
+<section class="hero"><div><div class="eyebrow">Agricultural plant collection</div><h1>ค้นพบความงามของ <em>พืช</em> รอบตัวเรา</h1><p>พื้นที่เล็ก ๆ สำหรับรวบรวมและนำเสนอข้อมูลพืชทางการเกษตร ให้การเรียนรู้เป็นเรื่องง่าย สงบ และเป็นระบบ</p></div><div class="visual"><div class="orb"></div><div class="leaf"></div><div class="leaf two"></div><div class="visual-label">ระบบฐานข้อมูลสายพันธุ์พืชทางการเกษตร</div></div></section>
 """, unsafe_allow_html=True)
+
+st.markdown("<h2 class='section-title'>ข้อมูลโครงการ</h2>", unsafe_allow_html=True)
+st.markdown("<p class='section-subtitle'>ภาพรวมของข้อมูลที่โครงการกำลังรวบรวมและนำเสนอ</p>", unsafe_allow_html=True)
+info_1, info_2 = st.columns([1, 1])
+with info_1:
+    st.markdown("<div class='card'><small>PROJECT SCOPE</small><h3>ไม้ดอกและพืชประดับเบื้องต้น</h3><p>รวบรวมรายชื่อพืช 27 รายการ เช่น ดอกบัว ดอกมะลิ ดอกดาวเรือง กุหลาบ กล้วยไม้ เบญจมาศ ทานตะวัน และดอกรักเร่</p></div>", unsafe_allow_html=True)
+with info_2:
+    st.markdown("<div class='card'><small>DATA SOURCE</small><h3>แหล่งข้อมูลอ้างอิง</h3><p>กรมวิชาการเกษตร — ฐานข้อมูลพรรณพืชและเชื้อพันธุกรรมพืช ใช้เป็นแหล่งตรวจสอบข้อมูลพืชของโครงการ</p></div>", unsafe_allow_html=True)
 
 st.markdown("<h2 class='section-title'>ออกแบบมาเพื่อการเรียนรู้ที่ดีขึ้น</h2>", unsafe_allow_html=True)
 card_1, card_2, card_3 = st.columns(3)
